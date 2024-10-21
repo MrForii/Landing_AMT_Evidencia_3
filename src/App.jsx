@@ -14,13 +14,17 @@ const App = () => {
     const threshold = 300; // Umbral en centímetros
 
     const fetchData = async () => {
-        try {
-            const response = await axios.get('https://evidencia-2-amt-ispc.onrender.com/data');
-            setData(response.data);
-        } catch (error) {
-            console.error('Error fetching data:', error);
-        }
-    };
+      try {
+          const response = await axios.get('https://evidencia-2-amt-ispc.onrender.com/data', {
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+          });
+          setData(response.data);
+      } catch (error) {
+          console.error('Error fetching data:', error.response || error.message);
+      }
+  };
 
     useEffect(() => {
         fetchData();
