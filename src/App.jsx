@@ -100,7 +100,7 @@ const App = () => {
             }
           }
         >
-          <img src="/public/logo_ispc.png" alt="" />
+          <img src="./assets/logo_ispc.png" alt="" />
           <h1
             style={
               {
