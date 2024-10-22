@@ -100,7 +100,7 @@ const App = () => {
             }
           }
         >
-          <img src="./assets/logo_ispc.png" alt="" />
+          <img src="/src/assets/logo_ispc.png" alt="" />
           <h1
             style={
               {
@@ -328,7 +328,7 @@ const App = () => {
             }
           }
         > 
-          <img src="/src/logo_ispc.png" alt="" 
+          <img src="/src/assets/logo_ispc.png" alt="" 
             style={ { width: '180px' } }
           />
           <div 
